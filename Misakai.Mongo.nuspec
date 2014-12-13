@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Misakai.Mongo</id>
+    <version>$version$</version>
+    <authors>Misakai Ltd.</authors>
+    <iconUrl>http://s3.amazonaws.com/cdn.misakai.com/www-nuget/mongo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Fork of an official C# driver for MongoDB</description>
+    <copyright>Copyright 2014 Misakai Ltd</copyright>
+    <tags>database storage mongodb mongo</tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\Spike.Runtime.dll" target="lib" />
+  </files>
+</package>
+

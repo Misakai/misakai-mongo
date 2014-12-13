@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Misakai.Bson</id>
+    <version>$version$</version>
+    <authors>Misakai Ltd.</authors>
+    <iconUrl>http://s3.amazonaws.com/cdn.misakai.com/www-nuget/mongo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>BSON Serialization format</description>
+    <copyright>Copyright 2014 Misakai Ltd</copyright>
+    <tags>serialization binary</tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\Spike.Runtime.dll" target="lib" />
+  </files>
+</package>

@@ -1,19 +1,24 @@
-version: 2.0.0.{build}
+version: '{build}'
 
 branches:
   only:
     - master
 
-clone_folder: c:\build
+configuration: Release
 
-os: Windows Server 2012
+before_build:
+  - cmd: nuget restore Misakai.Mongo.sln
 
-test: off
+build:
+  project: Misakai.Mongo.sln
+  parallel: true
+  publish_nuget: true
+  publish_nuget_symbols: false
+  verbosity: normal
 
-build_script: 
-  - build.cmd Build
-  - ps: Start-FileDownload 'https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-2.6.3-signed.msi' -FileName 'C:\build\mongodb.msi'
-  - msiexec /i C:\build\mongodb.msi /qn /log c:\build\mongodb-install.log INSTALLLOCATION=C:\MongoDB
-  - ps: mkdir c:\build\data
-  - ps: Start-Process -NoNewWindow C:\MongoDB\bin\mongod.exe -ArgumentList "-dbpath c:\build\data -smallfiles -oplogSize 100 -setParameter enableTestCommands=1"
-  - build.cmd Test
+artifacts:
+  - path: '**\*.nupkg'
+
+nuget:
+  account_feed: true
+  project_feed: true

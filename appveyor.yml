@@ -17,7 +17,8 @@ build:
   verbosity: normal
 
 artifacts:
-  - path: '**\*.nupkg'
+  - path: '**\Misakai.Bson*.nupkg'
+  - path: '**\Misakai.Mongo*.nupkg'
 
 nuget:
   account_feed: true

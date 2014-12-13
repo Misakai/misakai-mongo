@@ -11,6 +11,6 @@
     <tags>serialization binary</tags>
   </metadata>
   <files>
-    <file src="bin\Release\Spike.Runtime.dll" target="lib" />
+    <file src="MongoDB.Bson\bin\Release\Misakai.Bson.dll" target="lib" />
   </files>
 </package>

@@ -11,7 +11,7 @@
     <tags>database storage mongodb mongo</tags>
   </metadata>
   <files>
-    <file src="bin\Release\Spike.Runtime.dll" target="lib" />
+    <file src="MongoDB.Driver\bin\Release\Misakai.Mongo.dll" target="lib" />
   </files>
 </package>
 

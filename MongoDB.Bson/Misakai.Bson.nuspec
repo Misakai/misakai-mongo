@@ -4,7 +4,7 @@
     <id>Misakai.Bson</id>
     <version>$version$</version>
     <authors>Misakai Ltd.</authors>
-    <iconUrl>http://s3.amazonaws.com/cdn.misakai.com/www-nuget/misakai.png</iconUrl>
+    <iconUrl>http://s3.amazonaws.com/cdn.misakai.com/www-nuget/default.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>BSON Serialization format</description>
     <copyright>Copyright 2014 Misakai Ltd</copyright>

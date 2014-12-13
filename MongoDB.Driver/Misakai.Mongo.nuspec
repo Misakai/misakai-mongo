@@ -1,16 +1,17 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Misakai.Bson</id>
+    <id>Misakai.Mongo</id>
     <version>$version$</version>
     <authors>Misakai Ltd.</authors>
     <iconUrl>http://s3.amazonaws.com/cdn.misakai.com/www-nuget/mongo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>BSON Serialization format</description>
+    <description>Fork of an official C# driver for MongoDB</description>
     <copyright>Copyright 2014 Misakai Ltd</copyright>
-    <tags>serialization binary</tags>
+    <tags>database storage mongodb mongo</tags>
   </metadata>
   <files>
-    <file src="MongoDB.Bson\bin\Release\Misakai.Bson.dll" target="lib" />
+    <file src="bin\Release\Misakai.Mongo.dll" target="lib" />
   </files>
 </package>
+
